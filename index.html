@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Light clone</title>
+</head>
+
+<body>
+    <div class="header">
+
+        <nav>
+            <img src="./images/menu.png" class="manu">
+            <img src="./images/logo.png" class="logo">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About-us</a></li>
+                <li><a href="">Email-now</a></li>
+            </ul>
+            <button type="button" onclick="togglebtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="lamp-contanier">
+            <img src="./images/lamp.png" class="lamp" alt="">
+            <img src="./images/light.png" class="light" id="light" alt="">
+        </div>
+
+        <div class="text-contanier">
+            <h1>Latest In Lighting</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quo, est nulla facere dicta qui
+                voluptatem ab quod consequatur maiores!</p>
+        </div>
+
+    </div>
+
+    <script>
+        let btn = document.getElementById('btn');
+        let light = document.getElementById('light');
+
+        function togglebtn(){
+            btn.classList.toggle('active');
+            light.classList.toggle('on');
+        }
+    </script>
+
+</body>
+
+</html>
